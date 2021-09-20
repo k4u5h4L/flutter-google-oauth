@@ -43,10 +43,13 @@ android {
 
     signingConfigs {
         debug {
-            keyAlias 'androiddebugkey'
-            keyPassword "$System.env.KEY_PASSWORD"
+            Properties keystoreProps = new Properties()
+            keystoreProps.load(new FileInputStream(file('keystore.config')))
+
+            keyAlias keystoreProps['keyAlias']
+            keyPassword keystoreProps['keyPassword']
             storeFile file('oauthkey.jks')
-            storePassword "$System.env.KEY_PASSWORD"
+            storePassword keystoreProps['storePassword']
         }
     }
 

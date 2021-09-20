@@ -15,6 +15,7 @@
 # *.jks
 android/app/oauthkey.jks
 env-vars.sh
+android/app/keystore.config
 
 # IntelliJ related
 *.iml
