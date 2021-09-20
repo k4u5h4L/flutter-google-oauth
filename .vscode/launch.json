@@ -1,0 +1,11 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Flutter Google OAuth",
+            "request": "launch",
+            "type": "dart",
+            "args": ["--web-port", "8000"]
+        }
+    ]
+}
