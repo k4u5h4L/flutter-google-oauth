@@ -1,16 +1,19 @@
-# flutter_google_oauth
+# Flutter Google OAuth
 
-A new Flutter project.
+An OAuth authentication system built in Flutter using Google OAuth. 
 
-## Getting Started
+# To run it locally:
 
-This project is a starting point for a Flutter application.
+- Generate the `.jks` file after configuring your Google cloud console and paste it in the `android/app/` directory.
+- Make a new file called `keystore.config` and fill it keys by looking at the `keystore.sample.config` file.
+- Make a .env file in the root of this project and fill in keys by looking at the `.env.sample` file.
+- To launch the app on a physical device or an emulator run:
 
-A few resources to get you started if this is your first Flutter project:
+```
+flutter run
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- To make a release build:
+```
+flutter build apk
+```
